@@ -347,12 +347,35 @@ body {
     background: linear-gradient(90deg, var(--color-accent), var(--color-accent-dim));
 }
 
+.speaker-photo {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 auto 1rem;
+    display: block;
+}
+
+.speaker-photo.placeholder {
+    background: var(--color-bg-alt);
+    border: 1px dashed var(--color-border);
+}
+
 .speaker-card h3 {
     font-family: var(--font-heading);
     font-size: 1.05rem;
     color: var(--color-heading);
     margin-bottom: 0.25rem;
     letter-spacing: -0.01em;
+}
+
+.speaker-card h3 a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.speaker-card h3 a:hover {
+    color: var(--color-accent);
 }
 
 .speaker-affiliation {
@@ -541,19 +564,7 @@ body {
     color: #fff;
 }
 
-.contact-email {
-    margin-top: 0.75rem;
-}
 
-.contact-email a {
-    color: var(--color-accent);
-    text-decoration: none;
-    transition: opacity 0.2s;
-}
-
-.contact-email a:hover {
-    opacity: 0.8;
-}
 
 .funding {
     font-size: 0.85rem;
