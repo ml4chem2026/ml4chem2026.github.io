@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML4Chem 2026 — Modern ML in Chemistry</title>
+    <meta name="description" content="Summer School on Modern ML in Chemistry: From (foundational) interatomic potentials to generative AI. August 3-5, 2026, University of Leipzig.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="#hero" class="nav-brand">ML4Chem <span class="nav-year">2026</span></a>
+        <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#program">Program</a></li>
+            <li><a href="#venue">Venue</a></li>
+            <li><a href="#registration">Registration</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero" id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+        <p class="hero-label">Summer School</p>
+        <h1>Modern ML<br>in Chemistry</h1>
+        <p class="hero-subtitle">From (foundational) interatomic potentials to generative AI</p>
+        <div class="hero-details">
+            <div class="hero-detail-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <span>August 3&ndash;5, 2026</span>
+            </div>
+            <div class="hero-detail-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>University of Leipzig, Germany</span>
+            </div>
+        </div>
+        <p class="hero-funding">Funded by COST Action DAEMON</p>
+    </div>
+</header>
+
+<!-- About -->
+<section class="section" id="about">
+    <div class="container">
+        <div class="section-header fade-in">
+            <h2>About the Summer School</h2>
+        </div>
+        <p class="fade-in">
+            This three-day summer school brings together researchers and practitioners to explore
+            both foundational and emerging applications of machine learning across chemistry and
+            materials science. It is aimed at PhD students, postdocs, and early-career researchers
+            in computational chemistry, materials science, and related fields.
+            The program combines talks with hands-on tutorials across four thematic sessions:
+        </p>
+        <div class="topics-grid">
+            <div class="topic-card fade-in">
+                <div class="topic-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="8" r="2"/><circle cx="20" cy="8" r="2"/><circle cx="4" cy="16" r="2"/><circle cx="20" cy="16" r="2"/><line x1="6" y1="8" x2="9.5" y2="10.5"/><line x1="18" y1="8" x2="14.5" y2="10.5"/><line x1="6" y1="16" x2="9.5" y2="13.5"/><line x1="18" y1="16" x2="14.5" y2="13.5"/></svg>
+                </div>
+                <h3>Basic ML, Foundational Models &amp; Fine-tuning</h3>
+                <p>MACE architecture, equivariant representations, and transfer learning for molecular systems.</p>
+            </div>
+            <div class="topic-card fade-in">
+                <div class="topic-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+                </div>
+                <h3>ML for Excited States</h3>
+                <p>Machine learning approaches for photodynamics and excited-state properties.</p>
+            </div>
+            <div class="topic-card fade-in">
+                <div class="topic-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="8" height="8"/><rect x="14" y="14" width="8" height="8"/><line x1="10" y1="6" x2="14" y2="6"/><line x1="10" y1="18" x2="14" y2="18"/><line x1="6" y1="10" x2="6" y2="14"/><line x1="18" y1="10" x2="18" y2="14"/></svg>
+                </div>
+                <h3>ML for Extended Systems: QM/MM &amp; Beyond</h3>
+                <p>Hybrid quantum mechanics/molecular mechanics methods enhanced by machine learning.</p>
+            </div>
+            <div class="topic-card fade-in">
+                <div class="topic-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/><path d="M9 21v-3h6v3" stroke-dasharray="2 2"/></svg>
+                </div>
+                <h3>Generative Modeling &amp; Design</h3>
+                <p>Generative AI for molecular design, drug discovery, and materials science.</p>
+            </div>
+        </div>
+        <p class="fade-in">
+            In addition, a <strong>career round table</strong> will feature insights from industry
+            professionals and early-career researchers on career paths, challenges, and opportunities
+            in the field.
+        </p>
+    </div>
+</section>
+
+<!-- Speakers -->
+<section class="section section-alt" id="speakers">
+    <div class="container">
+        <div class="section-header fade-in">
+            <h2>Confirmed Speakers</h2>
+        </div>
+        <p class="section-intro fade-in">More speakers will be announced as they are confirmed.</p>
+        <div class="speakers-grid">
+            <div class="speaker-card fade-in">
+                <div class="speaker-accent"></div>
+                <h3>Prof. Dr. Chris Oostenbrink</h3>
+                <p class="speaker-affiliation">(Professor, BOKU University, Vienna)</p>
+                <p class="speaker-topic">QM/MM and Beyond</p>
+            </div>
+            <div class="speaker-card fade-in">
+                <div class="speaker-accent"></div>
+                <h3>Holger Wetzler</h3>
+                <p class="speaker-affiliation">(CEO, Bell Flavors &amp; Fragrances)</p>
+                <p class="speaker-topic">Career Round Table</p>
+            </div>
+            <div class="speaker-card fade-in">
+                <div class="speaker-accent"></div>
+                <h3>Prof. Dr. Leonie Weissweiler</h3>
+                <p class="speaker-affiliation">(Professor, Leipzig University / ScaDS.AI)</p>
+                <p class="speaker-topic">Career Round Table</p>
+            </div>
+            <div class="speaker-card fade-in">
+                <div class="speaker-accent"></div>
+                <h3>Prof. Dr. Julia Westermayr</h3>
+                <p class="speaker-affiliation">(Professor, Leipzig University)</p>
+                <p class="speaker-topic">ML for Excited States</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Program -->
+<section class="section" id="program">
+    <div class="container">
+        <div class="section-header fade-in">
+            <h2>Program</h2>
+        </div>
+        <p class="section-intro fade-in">
+            Each session combines a theory talk with a hands-on tutorial.
+            The detailed schedule will be announced closer to the event.
+        </p>
+
+        <div class="program-topics">
+            <div class="program-slot fade-in">
+                <div class="slot-marker"></div>
+                <div class="slot-content">
+                    <strong>MACE: Foundational Models &amp; Fine-tuning</strong>
+                    <span>Theory + Tutorial</span>
+                </div>
+            </div>
+            <div class="program-slot fade-in">
+                <div class="slot-marker"></div>
+                <div class="slot-content">
+                    <strong>ML for Excited States</strong>
+                    <span>Theory + Tutorial</span>
+                </div>
+            </div>
+            <div class="program-slot fade-in">
+                <div class="slot-marker"></div>
+                <div class="slot-content">
+                    <strong>QM/MM and Beyond</strong>
+                    <span>Theory + Tutorial</span>
+                </div>
+            </div>
+            <div class="program-slot fade-in">
+                <div class="slot-marker"></div>
+                <div class="slot-content">
+                    <strong>Generative Modeling &amp; Design</strong>
+                    <span>Theory + Tutorial</span>
+                </div>
+            </div>
+            <div class="program-slot fade-in">
+                <div class="slot-marker"></div>
+                <div class="slot-content">
+                    <strong>Career Round Table</strong>
+                    <span>Industry &amp; Early-Career Perspectives</span>
+                </div>
+            </div>
+            <div class="program-slot fade-in">
+                <div class="slot-marker"></div>
+                <div class="slot-content">
+                    <strong>Poster Session</strong>
+                    <span>Participant Contributions &mdash; submission details will follow</span>
+                </div>
+            </div>
+            <div class="program-slot slot-social fade-in">
+                <div class="slot-marker"></div>
+                <div class="slot-content">
+                    <strong>Social Dinner</strong>
+                    <span>Tuesday evening</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Venue -->
+<section class="section section-alt" id="venue">
+    <div class="container">
+        <div class="section-header fade-in">
+            <h2>Venue &amp; Travel</h2>
+        </div>
+        <div class="venue-info">
+            <div class="venue-main fade-in">
+                <h3>University of Leipzig</h3>
+                <p>Leipzig, Germany</p>
+                <p>
+                    The summer school will be held at the University of Leipzig. Exact room details
+                    will be announced closer to the event.
+                </p>
+            </div>
+            <div class="venue-travel fade-in">
+                <h3>Getting to Leipzig</h3>
+                <ul>
+                    <li><strong>By air:</strong> Leipzig/Halle Airport (LEJ), with connections to major European hubs.</li>
+                    <li><strong>By train:</strong> Leipzig Hauptbahnhof is well-connected via Deutsche Bahn ICE/IC services.</li>
+                    <li><strong>Arrival:</strong> Most participants arrive on Sunday, August 2.</li>
+                </ul>
+                <p>Accommodation recommendations will be shared soon.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Registration -->
+<section class="section" id="registration">
+    <div class="container">
+        <div class="section-header fade-in">
+            <h2>Registration</h2>
+        </div>
+        <div class="registration-box fade-in">
+            <p class="registration-status">Coming Soon</p>
+            <p>
+                Registration will open at a later date. The summer school has a capacity
+                of approximately 40&ndash;45 participants.
+            </p>
+            <p>
+                <strong>Travel grants</strong> are available through COST Action DAEMON, covering
+                travel and accommodation for eligible participants. COST members may apply through
+                the COST system.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<footer class="section footer" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2>Organizers</h2>
+        </div>
+        <div class="organizers">
+            <p>
+                <strong>Prof. Dr. Julia Westermayr</strong> (Lead Organizer),
+                Max Buchholz,
+                Daniel Bitterlich,
+                Sophia Wesely
+            </p>
+            <p>University of Leipzig</p>
+            <p class="contact-email">Contact: <a href="mailto:julia.westermayr@uni-leipzig.de">julia.westermayr@uni-leipzig.de</a></p>
+        </div>
+        <div class="funding">
+            <div class="funding-logos">
+                <img src="assets/img/cost-logo-white.png" alt="COST - European Cooperation in Science and Technology" class="funding-logo">
+                <img src="assets/img/eu-funded-white.png" alt="Funded by the European Union" class="funding-logo">
+            </div>
+            <p>
+                Funded by <strong>COST Action DAEMON</strong> (CA21101).
+                COST (European Cooperation in Science and Technology) is funded by the Horizon Europe
+                Framework Programme of the European Union.
+            </p>
+        </div>
+        <p class="copyright">&copy; 2026 ML4Chem Summer School</p>
+    </div>
+</footer>
+
+<script>
+// Molecular network animation
+(function() {
+    const canvas = document.getElementById('hero-canvas');
+    const ctx = canvas.getContext('2d');
+    let nodes = [];
+    let w, h;
+    const NODE_COUNT = 60;
+    const CONNECT_DIST = 140;
+
+    function resize() {
+        w = canvas.width = canvas.offsetWidth;
+        h = canvas.height = canvas.offsetHeight;
+    }
+
+    function init() {
+        resize();
+        nodes = [];
+        for (let i = 0; i < NODE_COUNT; i++) {
+            nodes.push({
+                x: Math.random() * w,
+                y: Math.random() * h,
+                vx: (Math.random() - 0.5) * 0.4,
+                vy: (Math.random() - 0.5) * 0.4,
+                r: Math.random() * 2 + 1.5
+            });
+        }
+    }
+
+    function draw() {
+        ctx.clearRect(0, 0, w, h);
+        // Draw connections
+        for (let i = 0; i < nodes.length; i++) {
+            for (let j = i + 1; j < nodes.length; j++) {
+                const dx = nodes[i].x - nodes[j].x;
+                const dy = nodes[i].y - nodes[j].y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                if (dist < CONNECT_DIST) {
+                    const alpha = (1 - dist / CONNECT_DIST) * 0.15;
+                    ctx.beginPath();
+                    ctx.moveTo(nodes[i].x, nodes[i].y);
+                    ctx.lineTo(nodes[j].x, nodes[j].y);
+                    ctx.strokeStyle = `rgba(255, 255, 255, ${alpha})`;
+                    ctx.lineWidth = 1;
+                    ctx.stroke();
+                }
+            }
+        }
+        // Draw nodes
+        for (const node of nodes) {
+            ctx.beginPath();
+            ctx.arc(node.x, node.y, node.r, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
+            ctx.fill();
+        }
+    }
+
+    function update() {
+        for (const node of nodes) {
+            node.x += node.vx;
+            node.y += node.vy;
+            if (node.x < 0 || node.x > w) node.vx *= -1;
+            if (node.y < 0 || node.y > h) node.vy *= -1;
+        }
+    }
+
+    function loop() {
+        update();
+        draw();
+        requestAnimationFrame(loop);
+    }
+
+    init();
+    loop();
+    window.addEventListener('resize', () => { resize(); });
+})();
+
+// Scroll reveal
+(function() {
+    const els = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(el => observer.observe(el));
+})();
+
+// Navbar background on scroll
+(function() {
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+})();
+</script>
+
+</body>
+</html>
