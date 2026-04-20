@@ -180,15 +180,17 @@ body {
 
 .hero-title-row {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    gap: 1.75rem;
+    gap: 1.5rem;
     margin-bottom: 0.75rem;
 }
 
 .hero-logo {
-    width: 160px;
-    height: 160px;
+    width: 130px;
+    height: 130px;
     object-fit: contain;
     flex-shrink: 0;
     filter: drop-shadow(0 8px 28px rgba(6, 182, 212, 0.35));
