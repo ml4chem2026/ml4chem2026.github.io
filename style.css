@@ -99,6 +99,16 @@ body {
     font-weight: 700;
     font-size: 1.15rem;
     letter-spacing: -0.01em;
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+}
+
+.nav-brand-logo {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
 .nav-year {
@@ -170,7 +180,7 @@ body {
 
 .about-logo {
     display: block;
-    width: 140px;
+    width: 200px;
     height: auto;
     margin: -0.5rem auto 2rem;
 }
@@ -634,8 +644,8 @@ body {
     }
 
     .about-logo {
-        width: 110px;
-        margin: 0 auto 1.25rem;
+        width: 150px;
+        margin: 0 auto 1.5rem;
     }
 
     .hero h1 {
