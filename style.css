@@ -589,6 +589,16 @@ body {
     background: var(--color-accent);
 }
 
+.footer a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
 .organizers {
     margin-bottom: 2.5rem;
 }
