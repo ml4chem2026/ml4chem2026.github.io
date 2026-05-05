@@ -411,6 +411,12 @@ body {
     color: var(--color-accent);
 }
 
+.speaker-card h3 a::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+}
+
 .speaker-affiliation {
     font-size: 0.85rem;
     color: var(--color-text-light);
