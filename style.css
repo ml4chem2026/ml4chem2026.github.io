@@ -580,6 +580,39 @@ body {
     margin-top: 0.75rem;
 }
 
+.registration-cta {
+    margin-top: 2rem !important;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: var(--color-accent);
+    color: #fff;
+    padding: 0.9rem 2.25rem;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    border: 2px solid var(--color-accent);
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background: var(--color-accent-dim);
+    border-color: var(--color-accent-dim);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px var(--color-accent-glow);
+    color: #fff;
+}
+
+.registration-fineprint {
+    margin-top: 1.5rem !important;
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+}
+
 /* === Footer === */
 .footer {
     background: var(--color-primary);
