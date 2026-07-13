@@ -50,70 +50,100 @@
 
 <!-- Hero -->
 <header class="hero" id="hero">
-    <canvas id="hero-canvas"></canvas>
-    <div class="hero-content">
-        <p class="hero-label">Summer School</p>
-        <div class="hero-title-row">
-            <img src="assets/img/logo/logo-white.svg" alt="ML4Chem logo" class="hero-logo">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-inner">
+        <div class="hero-copy">
+            <p class="hero-label">Summer School &middot; Leipzig University</p>
             <h1>Modern ML<br>in Chemistry</h1>
+            <p class="hero-subtitle">From (foundational) interatomic potentials to generative AI</p>
+            <p class="hero-funding">Funded by COST Action DAEMON</p>
         </div>
-        <p class="hero-subtitle">From (foundational) interatomic potentials to generative AI</p>
-        <div class="hero-details">
-            <div class="hero-detail-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                <span>August 3&ndash;5, 2026</span>
-            </div>
-            <div class="hero-detail-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                <span>Leipzig University, Germany</span>
-            </div>
-        </div>
-        <p class="hero-funding">Funded by COST Action DAEMON</p>
+        <img src="assets/img/logo/logo-white.svg" alt="" class="hero-logo">
+    </div>
+    <div class="hero-facts">
+        <dl class="hero-facts-inner">
+            <div><dt>Dates</dt><dd>3&ndash;5 August 2026</dd></div>
+            <div><dt>Venue</dt><dd>Faculty of Chemistry, Leipzig University</dd></div>
+            <div><dt>Format</dt><dd>4 sessions &middot; lectures &amp; hands-on tutorials</dd></div>
+            <div><dt>Registration</dt><dd>Closed &middot; 40&ndash;45 participants</dd></div>
+        </dl>
     </div>
 </header>
 
 <!-- About -->
 <section class="section" id="about">
     <div class="container">
-        <div class="section-header fade-in">
-            <p class="section-kicker">01</p>
-            <h2>About the Summer School</h2>
+        <header class="section-head fade-in">
+            <span class="section-num">01</span>
+            <h2>About the School</h2>
+        </header>
+        <div class="about-lede fade-in">
+            <p>
+                ML4Chem is a three-day school on machine learning methods for chemistry and
+                materials science, held 3&ndash;5 August 2026 at Leipzig University. It is aimed
+                at PhD students, postdocs, and early-career researchers in computational
+                chemistry, materials science, and related fields &mdash; a group of 40&ndash;45
+                participants, small enough that the tutorials stay hands-on.
+            </p>
+            <p>
+                The scientific core is four sessions, one per half-day. Each session opens with
+                a 15-minute contributed talk from a participant, continues with a lecture by the
+                invited speaker, and closes with a two-hour tutorial run by the same speaker.
+            </p>
         </div>
-        <p class="fade-in">
-            This three-day summer school brings together researchers and practitioners to explore
-            both foundational and emerging applications of machine learning across chemistry and
-            materials science. It is aimed at PhD students, postdocs, and early-career researchers
-            in computational chemistry, materials science, and related fields.
-            The program is built around <strong>four core sessions</strong>, each combining
-            a short <strong>contributed talk</strong>, a <strong>lecture</strong>, and a
-            <strong>hands-on tutorial</strong>:
-        </p>
-        <div class="topics-grid">
-            <div class="topic-card fade-in">
-                <span class="topic-num">Session 1</span>
-                <h3>(Foundational) Interatomic Machine Learning Potentials: MACE and Beyond</h3>
-                <p>Equivariant architectures, foundational models, and fine-tuning strategies for accurate and scalable molecular simulations.</p>
-            </div>
-            <div class="topic-card fade-in">
-                <span class="topic-num">Session 2</span>
-                <h3>Beyond the Ground State: Machine Learning for Photochemistry</h3>
-                <p>Machine learning approaches for excited states, photodynamics, and nonadiabatic processes.</p>
-            </div>
-            <div class="topic-card fade-in">
-                <span class="topic-num">Session 3</span>
-                <h3>Machine Learning for Extended Systems: QM(ML)/MM</h3>
-                <p>Hybrid quantum mechanics/molecular mechanics methods enhanced by machine learning for large-scale, condensed-phase, and biological systems.</p>
-            </div>
-            <div class="topic-card fade-in">
-                <span class="topic-num">Session 4</span>
-                <h3>Machine Learning for Molecular Material Design: Generative Modeling</h3>
-                <p>Generative AI for the inverse design of molecules and materials with targeted properties.</p>
-            </div>
-        </div>
-        <p class="fade-in">
-            In addition, on the <strong>final day</strong>, we will host a
-            <strong>career round table</strong> with leaders from industry and academia
-            who will share insights from academia and beyond.
+
+        <ol class="session-list">
+            <li class="session-row fade-in" id="session-1" data-session="1">
+                <span class="session-index" aria-hidden="true">01</span>
+                <div class="session-body">
+                    <h3>(Foundational) Interatomic Machine Learning Potentials: MACE and Beyond</h3>
+                    <p>Equivariant architectures, foundational models, and fine-tuning strategies for accurate and scalable molecular simulations.</p>
+                </div>
+                <div class="session-meta">
+                    <a class="session-speaker" href="#speakers">Ilyes Batatia</a>
+                    <a class="session-slot" href="#program">Mon &middot; 09:00&ndash;13:00</a>
+                </div>
+            </li>
+            <li class="session-row fade-in" id="session-2" data-session="2">
+                <span class="session-index" aria-hidden="true">02</span>
+                <div class="session-body">
+                    <h3>Beyond the Ground State: Machine Learning for Photochemistry</h3>
+                    <p>Machine learning approaches for excited states, photodynamics, and nonadiabatic processes.</p>
+                </div>
+                <div class="session-meta">
+                    <a class="session-speaker" href="#speakers">Prof. Dr. Julia Westermayr</a>
+                    <a class="session-slot" href="#program">Mon &middot; 14:00&ndash;18:00</a>
+                </div>
+            </li>
+            <li class="session-row fade-in" id="session-3" data-session="3">
+                <span class="session-index" aria-hidden="true">03</span>
+                <div class="session-body">
+                    <h3>Machine Learning for Extended Systems: QM(ML)/MM</h3>
+                    <p>Hybrid quantum mechanics/molecular mechanics methods enhanced by machine learning for large-scale, condensed-phase, and biological systems.</p>
+                </div>
+                <div class="session-meta">
+                    <a class="session-speaker" href="#speakers">Prof. Dr. Chris Oostenbrink &amp; Dr. Peter Poliak</a>
+                    <a class="session-slot" href="#program">Tue &middot; 09:00&ndash;13:00</a>
+                </div>
+            </li>
+            <li class="session-row fade-in" id="session-4" data-session="4">
+                <span class="session-index" aria-hidden="true">04</span>
+                <div class="session-body">
+                    <h3>Machine Learning for Molecular Material Design: Generative Modeling</h3>
+                    <p>Generative AI for the inverse design of molecules and materials with targeted properties.</p>
+                </div>
+                <div class="session-meta">
+                    <a class="session-speaker" href="#speakers">Dr. Niklas Gebauer</a>
+                    <a class="session-slot" href="#program">Tue &middot; 14:00&ndash;18:00</a>
+                </div>
+            </li>
+        </ol>
+
+        <p class="about-coda fade-in">
+            The school closes on Wednesday morning with a career round table: Holger Wetzler
+            (CEO, Bell Flavors &amp; Fragrances), Prof. Dr. Leonie Weissweiler (Leipzig
+            University / ScaDS.AI), and Daniel Z&uuml;gner (Microsoft Research) take questions
+            on research careers inside and outside academia, followed by closing remarks.
         </p>
     </div>
 </section>
@@ -121,67 +151,87 @@
 <!-- Speakers -->
 <section class="section section-alt" id="speakers">
     <div class="container">
-        <div class="section-header fade-in">
-            <p class="section-kicker">02</p>
+        <header class="section-head fade-in">
+            <span class="section-num">02</span>
             <h2>Speakers</h2>
-        </div>
+        </header>
         <p class="section-intro fade-in">
-            Each core session is led by an invited speaker who gives the lecture and runs the
-            hands-on tutorial. On the final day, our round-table guests share their perspectives
-            on careers in academia and industry.
+            Each session is taught by the person who leads it: the invited speaker gives the
+            lecture, then runs the hands-on tutorial. Wednesday&rsquo;s round-table guests come
+            from three different directions &mdash; one runs a company, one holds a
+            professorship, one does research in industry.
         </p>
 
         <h3 class="speakers-group-label fade-in">Lectures &amp; Tutorials</h3>
-        <div class="speakers-grid">
-            <div class="speaker-card fade-in">
+        <div class="speaker-grid">
+            <figure class="speaker fade-in" data-session="1">
                 <div class="speaker-photo placeholder" aria-hidden="true">IB</div>
-                <h3><a href="https://www.eng.cam.ac.uk/profiles/ib467" target="_blank" rel="noopener">Ilyes Batatia</a></h3>
-                <p class="speaker-affiliation">Csányi Group, Department of Engineering, University of Cambridge</p>
-                <p class="speaker-topic">Session 1 &middot; Interatomic ML Potentials</p>
-            </div>
-            <div class="speaker-card fade-in">
+                <figcaption>
+                    <span class="speaker-session">Session 1 &middot; Interatomic ML Potentials</span>
+                    <h4><a href="https://www.eng.cam.ac.uk/profiles/ib467" target="_blank" rel="noopener">Ilyes Batatia</a></h4>
+                    <p class="speaker-affiliation">Cs&aacute;nyi Group, Department of Engineering, University of Cambridge</p>
+                </figcaption>
+            </figure>
+            <figure class="speaker fade-in" data-session="2">
                 <img src="assets/img/speakers/julia-westermayr.jpg" alt="Prof. Dr. Julia Westermayr" class="speaker-photo">
-                <h3><a href="https://www.chemie.uni-leipzig.de/wilhelm-ostwald-institut-fuer-physikalische-und-theoretische-chemie/juniorprofessur-westermayr" target="_blank" rel="noopener">Prof. Dr. Julia Westermayr</a></h3>
-                <p class="speaker-affiliation">Professor of AI in Theoretical Chemistry, Leipzig University</p>
-                <p class="speaker-topic">Session 2 &middot; Photochemistry</p>
-            </div>
-            <div class="speaker-card fade-in">
+                <figcaption>
+                    <span class="speaker-session">Session 2 &middot; Photochemistry</span>
+                    <h4><a href="https://www.chemie.uni-leipzig.de/wilhelm-ostwald-institut-fuer-physikalische-und-theoretische-chemie/juniorprofessur-westermayr" target="_blank" rel="noopener">Prof. Dr. Julia Westermayr</a></h4>
+                    <p class="speaker-affiliation">Professor of AI in Theoretical Chemistry, Leipzig University</p>
+                </figcaption>
+            </figure>
+            <figure class="speaker fade-in" data-session="3">
                 <img src="assets/img/speakers/chris-oostenbrink.jpg" alt="Prof. Dr. Chris Oostenbrink" class="speaker-photo">
-                <h3><a href="https://boku.ac.at/en/nwnr/mmsi" target="_blank" rel="noopener">Prof. Dr. Chris Oostenbrink</a></h3>
-                <p class="speaker-affiliation">Professor of Molecular Modeling and Simulation, BOKU University, Vienna</p>
-                <p class="speaker-topic">Session 3 &middot; QM(ML)/MM</p>
-            </div>
-            <div class="speaker-card fade-in">
+                <figcaption>
+                    <span class="speaker-session">Session 3 &middot; QM(ML)/MM</span>
+                    <h4><a href="https://boku.ac.at/en/nwnr/mmsi" target="_blank" rel="noopener">Prof. Dr. Chris Oostenbrink</a></h4>
+                    <p class="speaker-affiliation">Professor of Molecular Modeling and Simulation, BOKU University, Vienna</p>
+                </figcaption>
+            </figure>
+            <figure class="speaker fade-in" data-session="3">
                 <img src="assets/img/speakers/peter-poliak.jpg" alt="Dr. Peter Poliak" class="speaker-photo" style="object-position: 50% 25%;">
-                <h3><a href="https://online.boku.ac.at/BOKUonline/visitenkarte.show_vcard?pPersonenId=3CF3A3CB93E9118C&amp;pPersonenGruppe=3" target="_blank" rel="noopener">Dr. Peter Poliak</a></h3>
-                <p class="speaker-affiliation">Institute of Molecular Modeling and Simulation, BOKU University, Vienna</p>
-                <p class="speaker-topic">Session 3 &middot; QM(ML)/MM</p>
-            </div>
-            <div class="speaker-card fade-in">
+                <figcaption>
+                    <span class="speaker-session">Session 3 &middot; QM(ML)/MM</span>
+                    <h4><a href="https://online.boku.ac.at/BOKUonline/visitenkarte.show_vcard?pPersonenId=3CF3A3CB93E9118C&amp;pPersonenGruppe=3" target="_blank" rel="noopener">Dr. Peter Poliak</a></h4>
+                    <p class="speaker-affiliation">Institute of Molecular Modeling and Simulation, BOKU University, Vienna</p>
+                </figcaption>
+            </figure>
+            <figure class="speaker fade-in" data-session="4">
                 <img src="assets/img/speakers/niklas-gebauer.jpg" alt="Dr. Niklas Gebauer" class="speaker-photo">
-                <h3><a href="https://ml.tu-berlin.de/author/dr.-niklas-gebauer/" target="_blank" rel="noopener">Dr. Niklas Gebauer</a></h3>
-                <p class="speaker-affiliation">Machine Learning Group, TU Berlin and BIFOLD</p>
-                <p class="speaker-topic">Session 4 &middot; Generative Modeling</p>
-            </div>
+                <figcaption>
+                    <span class="speaker-session">Session 4 &middot; Generative Modeling</span>
+                    <h4><a href="https://ml.tu-berlin.de/author/dr.-niklas-gebauer/" target="_blank" rel="noopener">Dr. Niklas Gebauer</a></h4>
+                    <p class="speaker-affiliation">Machine Learning Group, TU Berlin and BIFOLD</p>
+                </figcaption>
+            </figure>
         </div>
 
         <h3 class="speakers-group-label fade-in">Career Round Table</h3>
-        <div class="speakers-grid">
-            <div class="speaker-card fade-in">
+        <div class="speaker-grid">
+            <figure class="speaker fade-in">
                 <img src="assets/img/speakers/holger-wetzler.jpg" alt="Holger Wetzler" class="speaker-photo">
-                <h3><a href="https://www.bell-europe.com/" target="_blank" rel="noopener">Holger Wetzler</a></h3>
-                <p class="speaker-affiliation">CEO, Bell Flavors &amp; Fragrances</p>
-            </div>
-            <div class="speaker-card fade-in">
+                <figcaption>
+                    <span class="speaker-session">Round Table &middot; Wednesday</span>
+                    <h4><a href="https://www.bell-europe.com/" target="_blank" rel="noopener">Holger Wetzler</a></h4>
+                    <p class="speaker-affiliation">CEO, Bell Flavors &amp; Fragrances</p>
+                </figcaption>
+            </figure>
+            <figure class="speaker fade-in">
                 <img src="assets/img/speakers/leonie-weissweiler.jpg" alt="Prof. Dr. Leonie Weissweiler" class="speaker-photo">
-                <h3><a href="https://leonieweissweiler.github.io/" target="_blank" rel="noopener">Prof. Dr. Leonie Weissweiler</a></h3>
-                <p class="speaker-affiliation">Professor of Natural Language Processing, Leipzig University / ScaDS.AI</p>
-            </div>
-            <div class="speaker-card fade-in">
+                <figcaption>
+                    <span class="speaker-session">Round Table &middot; Wednesday</span>
+                    <h4><a href="https://leonieweissweiler.github.io/" target="_blank" rel="noopener">Prof. Dr. Leonie Weissweiler</a></h4>
+                    <p class="speaker-affiliation">Professor of Natural Language Processing, Leipzig University / ScaDS.AI</p>
+                </figcaption>
+            </figure>
+            <figure class="speaker fade-in">
                 <img src="assets/img/speakers/daniel-zuegner.jpg" alt="Daniel Zügner" class="speaker-photo">
-                <h3><a href="https://www.microsoft.com/en-us/research/people/dzuegner/" target="_blank" rel="noopener">Daniel Zügner</a></h3>
-                <p class="speaker-affiliation">Senior Researcher, Microsoft Research, Berlin</p>
-            </div>
+                <figcaption>
+                    <span class="speaker-session">Round Table &middot; Wednesday</span>
+                    <h4><a href="https://www.microsoft.com/en-us/research/people/dzuegner/" target="_blank" rel="noopener">Daniel Z&uuml;gner</a></h4>
+                    <p class="speaker-affiliation">Senior Researcher, Microsoft Research, Berlin</p>
+                </figcaption>
+            </figure>
         </div>
     </div>
 </section>
@@ -189,137 +239,81 @@
 <!-- Program -->
 <section class="section" id="program">
     <div class="container">
-        <div class="section-header fade-in">
-            <p class="section-kicker">03</p>
+        <header class="section-head fade-in">
+            <span class="section-num">03</span>
             <h2>Program</h2>
-        </div>
+        </header>
         <p class="section-intro fade-in">
-            The summer school is structured around <strong>four core sessions</strong>,
-            each combining a short <strong>contributed talk</strong>, a <strong>lecture</strong>,
-            and a <strong>hands-on tutorial</strong>. Lectures and tutorials take place in the
-            Experimental Lecture Hall (Experimentalh&ouml;rsaal) of the Faculty of Chemistry;
-            the poster session is held in the Freiarbeitsbereich.
+            On Monday and Tuesday the program repeats one rhythm twice a day: contributed talk,
+            lecture, coffee, tutorial. Wednesday belongs to the career round table. All lectures
+            and tutorials take place in the Experimental Lecture Hall (Experimentalh&ouml;rsaal)
+            of the Faculty of Chemistry; the poster session is held in the Freiarbeitsbereich.
         </p>
 
-        <div class="schedule-day fade-in">
-            <h3>Monday, August 3</h3>
-            <div class="schedule-row">
-                <span class="schedule-time">08:30</span>
-                <div class="schedule-event"><strong>Registration</strong></div>
-            </div>
-            <div class="schedule-row">
-                <span class="schedule-time">08:50&ndash;09:00</span>
-                <div class="schedule-event"><strong>Welcome</strong></div>
-            </div>
-            <div class="schedule-row">
-                <span class="schedule-time">09:00&ndash;09:15</span>
-                <div class="schedule-event"><strong>Contributed Talk</strong><span>Hendrik Weiske</span></div>
-            </div>
-            <div class="schedule-row">
-                <span class="schedule-time">09:15&ndash;10:30</span>
-                <div class="schedule-event"><strong>Session 1 &mdash; Lecture: (Foundational) Interatomic Machine Learning Potentials: MACE and Beyond</strong><span>Ilyes Batatia</span></div>
-            </div>
-            <div class="schedule-row schedule-break">
-                <span class="schedule-time">10:30&ndash;11:00</span>
-                <div class="schedule-event"><strong>Coffee Break</strong></div>
-            </div>
-            <div class="schedule-row">
-                <span class="schedule-time">11:00&ndash;13:00</span>
-                <div class="schedule-event"><strong>Session 1 &mdash; Tutorial</strong><span>Ilyes Batatia</span></div>
-            </div>
-            <div class="schedule-row schedule-break">
-                <span class="schedule-time">13:00&ndash;14:00</span>
-                <div class="schedule-event"><strong>Lunch</strong></div>
-            </div>
-            <div class="schedule-row">
-                <span class="schedule-time">14:00&ndash;14:15</span>
-                <div class="schedule-event"><strong>Contributed Talk</strong><span>Dilara Farkhutdinova</span></div>
-            </div>
-            <div class="schedule-row">
-                <span class="schedule-time">14:15&ndash;15:30</span>
-                <div class="schedule-event"><strong>Session 2 &mdash; Lecture: Beyond the Ground State: Machine Learning for Photochemistry</strong><span>Prof. Dr. Julia Westermayr</span></div>
-            </div>
-            <div class="schedule-row schedule-break">
-                <span class="schedule-time">15:30&ndash;16:00</span>
-                <div class="schedule-event"><strong>Coffee Break</strong></div>
-            </div>
-            <div class="schedule-row">
-                <span class="schedule-time">16:00&ndash;18:00</span>
-                <div class="schedule-event"><strong>Session 2 &mdash; Tutorial</strong><span>Prof. Dr. Julia Westermayr</span></div>
-            </div>
-            <div class="schedule-row schedule-social">
-                <span class="schedule-time">18:30&ndash;20:00</span>
-                <div class="schedule-event"><strong>Poster Session</strong><span>Freiarbeitsbereich &mdash; with snacks and beverages</span></div>
-            </div>
-        </div>
+        <div class="schedule">
+            <section class="day fade-in" aria-labelledby="day-1">
+                <header class="day-head">
+                    <span class="day-num">Day 1</span>
+                    <h3 id="day-1">Monday <span class="day-date">August 3</span></h3>
+                </header>
+                <div class="slot"><span class="slot-time">08:30</span><span class="slot-what">Registration</span></div>
+                <div class="slot"><span class="slot-time">08:50&ndash;09:00</span><span class="slot-what">Welcome</span></div>
+                <div class="session-block" data-session="1">
+                    <a class="session-block-label" href="#session-1">Session 1 &middot; Interatomic ML Potentials</a>
+                    <div class="slot"><span class="slot-time">09:00&ndash;09:15</span><span class="slot-what">Contributed talk<em>Hendrik Weiske</em></span></div>
+                    <div class="slot"><span class="slot-time">09:15&ndash;10:30</span><span class="slot-what">Lecture<em>Ilyes Batatia</em></span></div>
+                    <div class="slot slot-break"><span class="slot-time">10:30&ndash;11:00</span><span class="slot-what">Coffee break</span></div>
+                    <div class="slot"><span class="slot-time">11:00&ndash;13:00</span><span class="slot-what">Hands-on tutorial<em>Ilyes Batatia</em></span></div>
+                </div>
+                <div class="slot slot-break"><span class="slot-time">13:00&ndash;14:00</span><span class="slot-what">Lunch</span></div>
+                <div class="session-block" data-session="2">
+                    <a class="session-block-label" href="#session-2">Session 2 &middot; ML for Photochemistry</a>
+                    <div class="slot"><span class="slot-time">14:00&ndash;14:15</span><span class="slot-what">Contributed talk<em>Dilara Farkhutdinova</em></span></div>
+                    <div class="slot"><span class="slot-time">14:15&ndash;15:30</span><span class="slot-what">Lecture<em>Prof. Dr. Julia Westermayr</em></span></div>
+                    <div class="slot slot-break"><span class="slot-time">15:30&ndash;16:00</span><span class="slot-what">Coffee break</span></div>
+                    <div class="slot"><span class="slot-time">16:00&ndash;18:00</span><span class="slot-what">Hands-on tutorial<em>Prof. Dr. Julia Westermayr</em></span></div>
+                </div>
+                <div class="slot slot-social"><span class="slot-time">18:30&ndash;20:00</span><span class="slot-what">Poster session<em>Freiarbeitsbereich &middot; snacks and beverages</em></span></div>
+            </section>
 
-        <div class="schedule-day fade-in">
-            <h3>Tuesday, August 4</h3>
-            <div class="schedule-row">
-                <span class="schedule-time">09:00&ndash;09:15</span>
-                <div class="schedule-event"><strong>Contributed Talk</strong><span>Rhyan Barrett</span></div>
-            </div>
-            <div class="schedule-row">
-                <span class="schedule-time">09:15&ndash;10:30</span>
-                <div class="schedule-event"><strong>Session 3 &mdash; Lecture: Machine Learning for Extended Systems: QM(ML)/MM</strong><span>Prof. Dr. Chris Oostenbrink &amp; Dr. Peter Poliak</span></div>
-            </div>
-            <div class="schedule-row schedule-break">
-                <span class="schedule-time">10:30&ndash;11:00</span>
-                <div class="schedule-event"><strong>Coffee Break</strong></div>
-            </div>
-            <div class="schedule-row">
-                <span class="schedule-time">11:00&ndash;13:00</span>
-                <div class="schedule-event"><strong>Session 3 &mdash; Tutorial</strong><span>Prof. Dr. Chris Oostenbrink &amp; Dr. Peter Poliak</span></div>
-            </div>
-            <div class="schedule-row schedule-break">
-                <span class="schedule-time">13:00&ndash;14:00</span>
-                <div class="schedule-event"><strong>Lunch</strong></div>
-            </div>
-            <div class="schedule-row">
-                <span class="schedule-time">14:00&ndash;14:15</span>
-                <div class="schedule-event"><strong>Contributed Talk</strong><span>Patricia Ramos</span></div>
-            </div>
-            <div class="schedule-row">
-                <span class="schedule-time">14:15&ndash;15:30</span>
-                <div class="schedule-event"><strong>Session 4 &mdash; Lecture: Machine Learning for Molecular Material Design: Generative Modeling</strong><span>Dr. Niklas Gebauer</span></div>
-            </div>
-            <div class="schedule-row schedule-break">
-                <span class="schedule-time">15:30&ndash;16:00</span>
-                <div class="schedule-event"><strong>Coffee Break</strong></div>
-            </div>
-            <div class="schedule-row">
-                <span class="schedule-time">16:00&ndash;18:00</span>
-                <div class="schedule-event"><strong>Session 4 &mdash; Tutorial</strong><span>Dr. Niklas Gebauer</span></div>
-            </div>
-            <div class="schedule-row schedule-social">
-                <span class="schedule-time">18:00</span>
-                <div class="schedule-event"><strong>Conference BBQ</strong></div>
-            </div>
-        </div>
+            <section class="day fade-in" aria-labelledby="day-2">
+                <header class="day-head">
+                    <span class="day-num">Day 2</span>
+                    <h3 id="day-2">Tuesday <span class="day-date">August 4</span></h3>
+                </header>
+                <div class="session-block" data-session="3">
+                    <a class="session-block-label" href="#session-3">Session 3 &middot; QM(ML)/MM</a>
+                    <div class="slot"><span class="slot-time">09:00&ndash;09:15</span><span class="slot-what">Contributed talk<em>Rhyan Barrett</em></span></div>
+                    <div class="slot"><span class="slot-time">09:15&ndash;10:30</span><span class="slot-what">Lecture<em>Prof. Dr. Chris Oostenbrink &amp; Dr. Peter Poliak</em></span></div>
+                    <div class="slot slot-break"><span class="slot-time">10:30&ndash;11:00</span><span class="slot-what">Coffee break</span></div>
+                    <div class="slot"><span class="slot-time">11:00&ndash;13:00</span><span class="slot-what">Hands-on tutorial<em>Prof. Dr. Chris Oostenbrink &amp; Dr. Peter Poliak</em></span></div>
+                </div>
+                <div class="slot slot-break"><span class="slot-time">13:00&ndash;14:00</span><span class="slot-what">Lunch</span></div>
+                <div class="session-block" data-session="4">
+                    <a class="session-block-label" href="#session-4">Session 4 &middot; Generative Modeling</a>
+                    <div class="slot"><span class="slot-time">14:00&ndash;14:15</span><span class="slot-what">Contributed talk<em>Patricia Ramos</em></span></div>
+                    <div class="slot"><span class="slot-time">14:15&ndash;15:30</span><span class="slot-what">Lecture<em>Dr. Niklas Gebauer</em></span></div>
+                    <div class="slot slot-break"><span class="slot-time">15:30&ndash;16:00</span><span class="slot-what">Coffee break</span></div>
+                    <div class="slot"><span class="slot-time">16:00&ndash;18:00</span><span class="slot-what">Hands-on tutorial<em>Dr. Niklas Gebauer</em></span></div>
+                </div>
+                <div class="slot slot-social"><span class="slot-time">18:00</span><span class="slot-what">Conference BBQ<em>Destille</em></span></div>
+            </section>
 
-        <div class="schedule-day fade-in">
-            <h3>Wednesday, August 5</h3>
-            <div class="schedule-row">
-                <span class="schedule-time">10:00&ndash;11:00</span>
-                <div class="schedule-event"><strong>Career Round Table</strong><span>Holger Wetzler, Prof. Dr. Leonie Weissweiler, Daniel Z&uuml;gner</span></div>
-            </div>
-            <div class="schedule-row schedule-break">
-                <span class="schedule-time">11:00&ndash;11:30</span>
-                <div class="schedule-event"><strong>Coffee Break</strong></div>
-            </div>
-            <div class="schedule-row">
-                <span class="schedule-time">11:30&ndash;13:00</span>
-                <div class="schedule-event"><strong>Career Round Table</strong><span>continued</span></div>
-            </div>
-            <div class="schedule-row">
-                <span class="schedule-time"></span>
-                <div class="schedule-event"><strong>Closing Remarks</strong></div>
-            </div>
+            <section class="day fade-in" aria-labelledby="day-3">
+                <header class="day-head">
+                    <span class="day-num">Day 3</span>
+                    <h3 id="day-3">Wednesday <span class="day-date">August 5</span></h3>
+                </header>
+                <div class="slot"><span class="slot-time">10:00&ndash;11:00</span><span class="slot-what">Career round table<em>Holger Wetzler &middot; Prof. Dr. Leonie Weissweiler &middot; Daniel Z&uuml;gner</em></span></div>
+                <div class="slot slot-break"><span class="slot-time">11:00&ndash;11:30</span><span class="slot-what">Coffee break</span></div>
+                <div class="slot"><span class="slot-time">11:30&ndash;13:00</span><span class="slot-what">Career round table<em>continued</em></span></div>
+                <div class="slot"><span class="slot-time"></span><span class="slot-what">Closing remarks</span></div>
+            </section>
         </div>
 
         <div class="program-note fade-in">
             <strong>Materials</strong>
-            <span>The book of abstracts and a detailed guide to the lecture hall, the poster
+            <span>The book of abstracts and a directions guide to the lecture hall, the poster
             area, and the BBQ venue will be published here soon.</span>
         </div>
     </div>
@@ -328,36 +322,30 @@
 <!-- Venue -->
 <section class="section section-alt" id="venue">
     <div class="container">
-        <div class="section-header fade-in">
-            <p class="section-kicker">04</p>
+        <header class="section-head fade-in">
+            <span class="section-num">04</span>
             <h2>Venue &amp; Travel</h2>
-        </div>
-        <div class="venue-info">
+        </header>
+        <div class="venue-grid">
             <div class="venue-main fade-in">
                 <h3>Faculty of Chemistry, Leipzig University</h3>
-                <p>Johannisallee 29, 04103 Leipzig, Germany</p>
-                <p>
-                    The summer school will be held at the Faculty of Chemistry, Leipzig University.
-                    Lectures and tutorials take place in the Experimental Lecture Hall
-                    (Experimentalh&ouml;rsaal).
-                </p>
+                <p class="venue-address">Johannisallee 29 &middot; 04103 Leipzig, Germany</p>
+                <dl class="venue-locations">
+                    <div><dt>Lectures &amp; tutorials</dt><dd>Experimental Lecture Hall (Experimentalh&ouml;rsaal)</dd></div>
+                    <div><dt>Poster session</dt><dd>Freiarbeitsbereich &middot; Monday 18:30&ndash;20:00</dd></div>
+                    <div><dt>Conference BBQ</dt><dd>Destille &middot; Tuesday 18:00 &middot; &euro;30, paid at on-site registration</dd></div>
+                    <div><dt>Directions</dt><dd>A guide to all rooms and the BBQ venue will be published here soon.</dd></div>
+                </dl>
+                <!-- venue photos: add <figure class="venue-figure"><img src="..." alt="..."><figcaption>...</figcaption></figure> here when images arrive -->
             </div>
             <div class="venue-travel fade-in">
                 <h3>Getting to Leipzig</h3>
                 <ul>
-                    <li><strong>By air:</strong> Leipzig/Halle Airport (LEJ), with connections to major European hubs.</li>
-                    <li><strong>By train:</strong> Leipzig Hauptbahnhof is well-connected via Deutsche Bahn ICE/IC services.</li>
-                    <li><strong>Arrival:</strong> Most participants arrive on Sunday, August 2.</li>
+                    <li><strong>By air</strong> &mdash; Leipzig/Halle Airport (LEJ) connects to the major European hubs.</li>
+                    <li><strong>By train</strong> &mdash; Deutsche Bahn ICE/IC services run directly to Leipzig Hauptbahnhof.</li>
+                    <li><strong>Arrival</strong> &mdash; most participants arrive on Sunday, 2 August.</li>
                 </ul>
-                <p>Accommodation recommendations will be shared soon.</p>
-            </div>
-            <div class="venue-social fade-in">
-                <h3>Poster Session &amp; Conference BBQ</h3>
-                <p>
-                    Monday&rsquo;s poster session takes place in the Freiarbeitsbereich of the
-                    Faculty of Chemistry. The conference BBQ on Tuesday evening is held at the
-                    Destille. Maps and directions to all rooms will be published here soon.
-                </p>
+                <p class="venue-note">Accommodation recommendations will be shared soon.</p>
             </div>
         </div>
     </div>
@@ -366,30 +354,29 @@
 <!-- Registration -->
 <section class="section" id="registration">
     <div class="container">
-        <div class="section-header fade-in">
-            <p class="section-kicker">05</p>
+        <header class="section-head fade-in">
+            <span class="section-num">05</span>
             <h2>Registration</h2>
-        </div>
-        <div class="registration-box fade-in">
-            <p class="registration-status">Closed</p>
-            <p>
-                The summer school has a capacity of approximately 40&ndash;45 participants.
-            </p>
-            <p>
-                <strong>Travel grant</strong> allocations (travel and accommodation, through
-                COST Action DAEMON) are decided by the organizing committee. Allocation is not
-                guaranteed and applicants will be notified directly.
-            </p>
-            <p>
-                <strong>Optional add-on</strong> &mdash; the conference BBQ
-                (&euro;30) &mdash; is paid during the on-site registration.
-            </p>
-            <p class="registration-cta">
-                Registration is now closed.
-            </p>
-            <p class="registration-fineprint">
-                Personal data is processed in line with the GDPR. Details are shown at the top of the registration form.
-            </p>
+        </header>
+        <div class="reg-grid">
+            <div class="reg-status fade-in">
+                <p class="reg-headline">Registration is closed.</p>
+                <p class="reg-capacity">The school is capped at roughly 40&ndash;45 participants.</p>
+            </div>
+            <div class="reg-details fade-in">
+                <div class="reg-row">
+                    <h3>Travel grants</h3>
+                    <p>Grants for travel and accommodation, funded through COST Action DAEMON, are allocated by the organizing committee. Allocation is not guaranteed; applicants are notified directly.</p>
+                </div>
+                <div class="reg-row">
+                    <h3>Conference BBQ</h3>
+                    <p>The Tuesday BBQ at the Destille is an optional add-on: &euro;30, paid at on-site registration.</p>
+                </div>
+                <div class="reg-row">
+                    <h3>Personal data</h3>
+                    <p>Personal data is processed in line with the GDPR. Details are shown at the top of the registration form.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -397,33 +384,34 @@
 <!-- Contact -->
 <footer class="section footer" id="contact">
     <div class="container">
-        <div class="section-header">
-            <p class="section-kicker">06</p>
+        <header class="section-head">
+            <span class="section-num">06</span>
             <h2>Organizers</h2>
-        </div>
-        <div class="organizers">
-            <p>
-                <strong>Prof. Dr. Julia Westermayr</strong> (Lead Organizer),
-                Max Buchholz,
-                Daniel Bitterlich,
-                Sophia Wesely
-            </p>
-            <p>Leipzig University</p>
-
-        </div>
-        <div class="funding">
-            <div class="funding-logos">
-                <img src="assets/img/cost-logo-white.png" alt="COST - European Cooperation in Science and Technology" class="funding-logo">
-                <img src="assets/img/eu-funded-white.png" alt="Funded by the European Union" class="funding-logo">
+        </header>
+        <div class="footer-grid">
+            <div class="organizers">
+                <ul class="organizer-list">
+                    <li><strong>Prof. Dr. Julia Westermayr</strong> &middot; Lead Organizer</li>
+                    <li>Max Buchholz</li>
+                    <li>Daniel Bitterlich</li>
+                    <li>Sophia Wesely</li>
+                </ul>
+                <p class="organizer-inst">Leipzig University</p>
             </div>
-            <p>
-                The <strong>DAEMON COST Action CA22154</strong> acts as a co-organizer of the event.
-                COST (European Cooperation in Science and Technology) is a funding agency for research
-                and innovation networks. Our Actions help connect research initiatives across Europe
-                and enable scientists to grow their ideas by sharing them with their peers. This boosts
-                their research, career and innovation.
-                <a href="https://www.cost.eu" target="_blank" rel="noopener">www.cost.eu</a>
-            </p>
+            <div class="funding">
+                <div class="funding-logos">
+                    <img src="assets/img/cost-logo-white.png" alt="COST - European Cooperation in Science and Technology" class="funding-logo">
+                    <img src="assets/img/eu-funded-white.png" alt="Funded by the European Union" class="funding-logo">
+                </div>
+                <p>
+                    The <strong>DAEMON COST Action CA22154</strong> acts as a co-organizer of the event.
+                    COST (European Cooperation in Science and Technology) is a funding agency for research
+                    and innovation networks. Our Actions help connect research initiatives across Europe
+                    and enable scientists to grow their ideas by sharing them with their peers. This boosts
+                    their research, career and innovation.
+                    <a href="https://www.cost.eu" target="_blank" rel="noopener">www.cost.eu</a>
+                </p>
+            </div>
         </div>
         <p class="copyright">&copy; 2026 ML4Chem Summer School</p>
     </div>
@@ -434,10 +422,13 @@
 (function() {
     const canvas = document.getElementById('hero-canvas');
     const ctx = canvas.getContext('2d');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     let nodes = [];
     let w, h;
     const NODE_COUNT = 60;
     const CONNECT_DIST = 140;
+    // logo gradient, 400-weight shades for the navy background
+    const NODE_COLORS = ['#22d3ee', '#60a5fa', '#818cf8', '#a78bfa'];
 
     function resize() {
         w = canvas.width = canvas.offsetWidth;
@@ -453,7 +444,8 @@
                 y: Math.random() * h,
                 vx: (Math.random() - 0.5) * 0.4,
                 vy: (Math.random() - 0.5) * 0.4,
-                r: Math.random() * 2 + 1.5
+                r: Math.random() * 2 + 1.5,
+                color: NODE_COLORS[i % NODE_COLORS.length]
             });
         }
     }
@@ -478,12 +470,14 @@
             }
         }
         // Draw nodes
+        ctx.globalAlpha = 0.4;
         for (const node of nodes) {
             ctx.beginPath();
             ctx.arc(node.x, node.y, node.r, 0, Math.PI * 2);
-            ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
+            ctx.fillStyle = node.color;
             ctx.fill();
         }
+        ctx.globalAlpha = 1;
     }
 
     function update() {
@@ -502,7 +496,11 @@
     }
 
     init();
-    loop();
+    if (reducedMotion) {
+        draw();
+    } else {
+        loop();
+    }
     window.addEventListener('resize', () => { resize(); });
 })();
 
