@@ -731,11 +731,6 @@ body {
     color: var(--color-heading);
 }
 
-.reg-capacity {
-    margin-top: 0.6rem;
-    color: var(--color-text-light);
-}
-
 .reg-row {
     padding: 1rem 0;
     border-top: 1px solid var(--color-border);
