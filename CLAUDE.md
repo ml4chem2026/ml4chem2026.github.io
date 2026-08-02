@@ -27,6 +27,6 @@ Open `index.html` directly in a browser -- no server needed. Everything works of
 
 ## Content guidelines
 
-- Speakers: only list confirmed speakers (not invited/unconfirmed). Use "Prof. Dr." for all professors regardless of junior/full distinction.
+- Speakers: only list confirmed speakers (not invited/unconfirmed). Use "Prof. Dr." for all professors regardless of junior/full distinction. Exception: Leonie Weissweiler is "Jun.-Prof. Dr." at her own request -- do not change back.
 - COST/EU logos: required by funding rules. Use official white-on-transparent versions in the dark footer (no CSS filter hacks). Source files are in `assets/img/`.
 - The org/repo name may change pending a naming review (to avoid conflict with the existing ML4Chem Python package).
